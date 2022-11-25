@@ -8,5 +8,26 @@
   </head>
   <body>
     <h1>Onglets</h1>
-  </body>
+    <div id="onglets" x-data="{ouvert:1,}">
+      <ul role="tablist">
+        <li role="tab" :class="{'actif':ouvert===1,}" @click ="ouvert=1"Onglet 1>
+      </ul>
+    <div style="position:absolute;">
+      <div role="tabpanel" x-show="ouvert===1">
+        <h1>Panneau 1</h1>
+        <img src="../2022-r113-tp3-accordeons-Lucas-Chippaux-1/public/img/gloire_pere1.webp" alt="img" width="102">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eveniet neque itaque architecto voluptate ducimus in exercitationem qui autem ad perferendis corporis vitae quod numquam sapiente temporibus officia. Atque, magnam!</p>
+    </div>
+    <div role="tabpanel" x-show="ouvert===2">
+      <h1>Panneau 2</h1>
+      <img src="../2022-r113-tp3-accordeons-Lucas-Chippaux-1/public/img/chateau_mere.webp" alt="img" width="102">
+      <p>Deserunt illum temporibus, blanditiis eveniet quis dolorum expedita tempore, similique numquam nobis suscipit! Quidem quaerat vitae aut quibusdam, perspiciatis dignissimos numquam eligendi qui. Maiores facilis est eum dolorum mollitia in.</p>
+  </div>
+  <div role="tabpanel" x-show="ouvert===3">
+    <h1>Panneau 3</h1>
+    <img src="../2022-r113-tp3-accordeons-Lucas-Chippaux-1/public/img/temps_secret.webp" alt="img" width="102">
+    <p>Repellat provident nisi natus reiciendis velit, exercitationem atque saepe neque quod libero recusandae tempore corrupti fuga iste modi eligendi laboriosam maiores dolorum ea assumenda! Fuga perferendis provident autem sed dignissimos.</p>
+  </div>
+
+ </body>
 </html>
