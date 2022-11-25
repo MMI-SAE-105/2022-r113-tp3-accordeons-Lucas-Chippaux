@@ -11,6 +11,7 @@
     <h1>Accordéon avec <code>x-collapse</code></h1>
     <div id="accordeon" x-data="{isOpen2}">
       <section>
+        
         <button @click="isOpen = 1">bouton1</button>
         <p x-collapse.duration.100ms.min.20px x-show="isOpen===1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nam ipsa tenetur deleniti fugiat modi earum harum ut sunt. Modi, reprehenderit perspiciatis nulla consequuntur asperiores cumque voluptate quibusdam in consequatur.</p>
         
@@ -19,6 +20,7 @@
         
         <button @click="isOpen = 1">bouton3</button>
         <p x-collapse.duration.100ms.min.20px x-show="isOpen===3">Quaerat doloremque nesciunt debitis esse dignissimos, praesentium asperiores rem error accusamus iusto cum maxime iure aliquid suscipit similique adipisci, harum voluptatem quod in illo fugiat animi quis. Ex, consequuntur alias!</p>
+      
       </section>
     </div>
  </body>
